@@ -1,25 +1,20 @@
 # Neural Response Map
 
-## Project Description
----
-
-Neural Response Map is a tool that allows you to graphically detect the activations of artificial neural networks. To do this, the correlation between neuron activations is calculated and then t-SNE is applied to reduce the dimension. In this way the correlated neurons are plotted close to each other. This process allows observing the activation of neurons and obtaining the response to different stimuli such as the graphs presented by DeepMind in his [paper](https://arxiv.org/pdf/1807.01281.pdf).
+**Neural Response Map** is a tool that allows you to graphically detect the activations of artificial neural networks. To do this, the correlation between neuron activations is calculated and then t-SNE is applied to reduce the dimension. In this way the correlated neurons are plotted close to each other. This process allows observing the activation of neurons and obtaining the response to different stimuli such as the graphs presented by DeepMind in his [paper](https://arxiv.org/pdf/1807.01281.pdf).
 
 <p align="center">
-    <img src="https://github.com/joancerretani/NeuralResponseMap/blob/main/examples/neuralmap1.png" alt="neuralmap1">
+    <img src="https://github.com/joancerretani/NeuralResponseMap/blob/main/examples/neuralmap1.png">
 </p>
 
 ## Instalation
----
 
 To install you can use the following command
 
-```python
+```bash
 pip install neural-response-map
 ```
 
 ## Quick Start
----
 
 To make use of the tool, first import the components
 
@@ -38,14 +33,14 @@ Next you need to train the mapper. This function calculates the correlation betw
 nrm.TrainMap(inputs, model.layers[:2])
 ```
 
-Finally you can visualize your neural response map. To perform the visualization you must call GenerateMap and pass as a parameter the input examples that you want to visualize. If you pass more than one example, the display will be the average of all the neural response maps of the input data.
+Finally you can visualize your **Neural Response Map**. To perform the visualization you must call GenerateMap and pass as a parameter the input examples that you want to visualize. If you pass more than one example, the display will be the average of all the **Neural Response Maps** of the input data.
 
 ```python
 nrm.GenerateMap(inputs[1:2])
 ```
 
 <p align="center">
-    <img src="https://github.com/joancerretani/NeuralResponseMap/blob/main/examples/neuralmap2.png" alt="neuralmap2">
+    <img src="https://github.com/joancerretani/NeuralResponseMap/blob/main/examples/neuralmap2.png">
 </p>
 
 GenerateMap allows other optional parameters:
@@ -55,7 +50,7 @@ GenerateMap allows other optional parameters:
  - size: it is the size of the image. This value is a tuple with (5,5) by default.
  - file: is the name and type of file in which you want to save the image (for example 'map.png'). If no path is passed the image is not saved.
  
-Alternatively after the TrainMap call, you can call CircleProjection. This will make the neural response map more circular in shape.
+Alternatively after the TrainMap call, you can call CircleProjection. This will make the **Neural Response Map** more circular in shape.
 
 ```python
 nrm.CircleProjection()
@@ -66,11 +61,10 @@ nrm.GenerateMap(inputs[1:2])
 ```
 
 <p align="center">
-    <img src="https://github.com/joancerretani/NeuralResponseMap/blob/main/examples/neuralmap3.png" alt="neuralmap3">
+    <img src="https://github.com/joancerretani/NeuralResponseMap/blob/main/examples/neuralmap3.png">
 </p>
 
  ## Authors
----
 
 This package has been developed by:
 

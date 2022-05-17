@@ -4,11 +4,11 @@ from setuptools import find_packages, setup
 
 HERE = pathlib.Path(__file__).parent
 
-VERSION = '0.7'
+VERSION = '0.7.5'
 PACKAGE_NAME = 'neural_response_map'
 AUTHOR = 'Joan Alberto Cerretani'
 AUTHOR_EMAIL = 'joancerretani@gmail.com'
-URL = 'https://github.com/joancerretani'
+URL = 'https://github.com/joancerretani/NeuralResponseMap'
 
 LICENSE = 'MIT'
 DESCRIPTION = 'Library to visualize the activations of the hidden layers of artificial neural networks'
@@ -29,6 +29,11 @@ setup(
     url=URL,
     install_requires=INSTALL_REQUIRES,
     license=LICENSE,
+    keywords=[
+        'deep-learning',
+        'visualization',
+        'data-analysis'
+    ],
     packages=find_packages(),
     include_package_data=True
 )
