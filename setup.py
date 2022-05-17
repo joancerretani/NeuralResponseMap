@@ -4,7 +4,7 @@ from setuptools import find_packages, setup
 
 HERE = pathlib.Path(__file__).parent
 
-VERSION = '0.8.0'
+VERSION = '1.0.0'
 PACKAGE_NAME = 'neural_response_map'
 AUTHOR = 'Joan Alberto Cerretani'
 AUTHOR_EMAIL = 'joancerretani@gmail.com'
