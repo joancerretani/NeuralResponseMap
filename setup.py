@@ -1,4 +1,5 @@
 import pathlib
+import pkg_resources
 from setuptools import find_packages, setup
 
 HERE = pathlib.Path(__file__).parent
@@ -14,7 +15,7 @@ DESCRIPTION = 'Library to visualize the activations of the hidden layers of arti
 LONG_DESCRIPTION = (HERE / "README.md").read_text(encoding='utf-8')
 LONG_DESC_TYPE = "text/markdown"
 
-with Path('requirements.txt').open() as requirements_txt:
+with pathlib.Path('requirements.txt').open() as requirements_txt:
     INSTALL_REQUIRES = [str(requirement) for requirement in pkg_resources.parse_requirements(requirements_txt)]
 
 setup(
