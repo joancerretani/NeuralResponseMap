@@ -6,7 +6,7 @@
 Neural Response Map is a tool that allows you to graphically detect the activations of artificial neural networks. To do this, the correlation between neuron activations is calculated and then t-SNE is applied to reduce the dimension. In this way the correlated neurons are plotted close to each other. This process allows observing the activation of neurons and obtaining the response to different stimuli such as the graphs presented by DeepMind in his [paper](https://arxiv.org/pdf/1807.01281.pdf).
 
 <p align="center">
-    <img src="https://github.com/joancerretani/NeuralResponseMap/blob/main/examples/neuralmap1.png">
+    <img src="https://github.com/joancerretani/NeuralResponseMap/blob/main/examples/neuralmap1.png" alt="neuralmap1">
 </p>
 
 ## Instalation
@@ -45,7 +45,7 @@ nrm.GenerateMap(inputs[1:2])
 ```
 
 <p align="center">
-    <img src="https://github.com/joancerretani/NeuralResponseMap/blob/main/examples/neuralmap2.png">
+    <img src="https://github.com/joancerretani/NeuralResponseMap/blob/main/examples/neuralmap2.png" alt="neuralmap2">
 </p>
 
 GenerateMap allows other optional parameters:
@@ -66,7 +66,7 @@ nrm.GenerateMap(inputs[1:2])
 ```
 
 <p align="center">
-    <img src="https://github.com/joancerretani/NeuralResponseMap/blob/main/examples/neuralmap3.png">
+    <img src="https://github.com/joancerretani/NeuralResponseMap/blob/main/examples/neuralmap3.png" alt="neuralmap3">
 </p>
 
  ## Authors
