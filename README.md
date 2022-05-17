@@ -14,7 +14,7 @@ Neural Response Map is a tool that allows you to graphically detect the activati
 
 To install you can use the following command
 
-```
+```python
 pip install neural-response-map
 ```
 
@@ -23,24 +23,24 @@ pip install neural-response-map
 
 To make use of the tool, first import the components
 
-```
+```python
 from neural_response_map import NeuralResponseMap
 ```
 Then you need to instantiate the class. For this you must pass the tensorflow model as a parameter
 
-```
+```python
 nrm = NeuralResponseMap(model)
 ```
 
 Next you need to train the mapper. This function calculates the correlation between the neurons and performs the dimensionality reduction for subsequent graphs. For this you must pass the inputs as a parameter. The inputs are sample input data of the neural network, for example if your network is a VGG16, the inputs are images of your dataset. Also, if you wish, you can pass the layers you want to view as a parameter. If you don't pass the layers as a parameter, the visualization will use all the layers of the model.
 
-```
+```python
 nrm.TrainMap(inputs, model.layers[:2])
 ```
 
 Finally you can visualize your neural response map. To perform the visualization you must call GenerateMap and pass as a parameter the input examples that you want to visualize. If you pass more than one example, the display will be the average of all the neural response maps of the input data.
 
-```
+```python
 nrm.GenerateMap(inputs[1:2])
 ```
 
@@ -57,11 +57,11 @@ GenerateMap allows other optional parameters:
  
 Alternatively after the TrainMap call, you can call CircleProjection. This will make the neural response map more circular in shape.
 
-```
+```python
 nrm.CircleProjection()
 ```
 
-```
+```python
 nrm.GenerateMap(inputs[1:2])
 ```
 
