@@ -21,6 +21,7 @@ To make use of the tool, first import the components
 ```python
 from neural_response_map import NeuralResponseMap
 ```
+
 Then you need to instantiate the class. For this you must pass the tensorflow model as a parameter
 
 ```python
