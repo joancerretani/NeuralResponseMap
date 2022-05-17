@@ -32,13 +32,13 @@ Then you need to instantiate the class. For this you must pass the tensorflow mo
 nrm = NeuralResponseMap(model)
 ```
 
-Next you need to train the mapper. This function calculates the correlation between the neurons and performs the dimensionality reduction for subsequent graphs. For this you must pass the inputs as a parameter. The inputs are sample input data of the neural network, for example if your network is a VGG16, the innputs are images of your dataset. Also, if you wish, you can pass the layers you want to view as a parameter. If you don't pass the layers as a parameter, the visualization will use all the layers of the model.
+Next you need to train the mapper. This function calculates the correlation between the neurons and performs the dimensionality reduction for subsequent graphs. For this you must pass the inputs as a parameter. The inputs are sample input data of the neural network, for example if your network is a VGG16, the inputs are images of your dataset. Also, if you wish, you can pass the layers you want to view as a parameter. If you don't pass the layers as a parameter, the visualization will use all the layers of the model.
 
 ```
 nrm.TrainMap(inputs, model.layers[:2])
 ```
 
-Finally you can visualize your neural response map. To perform the visualization, you must call GenerateMap and pass as a parameter the input examples that you want to visualize. If you pass more than one example, the display will be the average of all the neural response maps of the input data.
+Finally you can visualize your neural response map. To perform the visualization you must call GenerateMap and pass as a parameter the input examples that you want to visualize. If you pass more than one example, the display will be the average of all the neural response maps of the input data.
 
 ```
 nrm.GenerateMap(inputs[1:2])
